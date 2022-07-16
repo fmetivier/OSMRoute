@@ -1,11 +1,10 @@
-import json
 import os
 
 
 def hack_route(P1=[46.740733, -19.170705], P2=[47.555450, -18.915429]):
     """
     executes a curl command to retrieve an osm (car) route
-    stores the result in an output.json file
+    stores the result in an output.txt file
     parses it to get the locations
 
     params: P1: first point of the route
@@ -17,13 +16,13 @@ def hack_route(P1=[46.740733, -19.170705], P2=[47.555450, -18.915429]):
     """
 
     cmd = (
-        """curl "https://router.project-osrm.org/route/v1/driving/%s,%s;%s,%s?steps=true" > output.json """
+        """curl "https://router.project-osrm.org/route/v1/driving/%s,%s;%s,%s?steps=true" > output.txt """
         % (P1[0], P1[1], P2[0], P2[1])
     )
 
     os.system(cmd)
 
-    f = open("output.json")
+    f = open("output.txt")
     lines = f.readlines()
     i = 0
     xlon = []
