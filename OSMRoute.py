@@ -42,5 +42,6 @@ def hack_route(P1=[46.740733, -19.170705], P2=[47.555450, -18.915429]):
 
 
 if __name__ == "__main__":
+    # hacks the route between Soavinadriana and Antananarivo
     x, y = hack_route()
     print(x, y)
