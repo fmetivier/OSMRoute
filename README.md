@@ -1,4 +1,4 @@
-# OSMRoute: a dirty python hack to retrieve OSM
+# OSMRoute: a dirty python hack to retrieve OSM routes
 
 
 * [Introduction](##introduction)
